@@ -1,0 +1,9 @@
+clc;
+clear all;
+d=input('Enter distance between phase and neutral wire in m');
+r=input('Enter the radius of phase and neutral wire in m');
+r'==0.7788*r;
+L=2*10^(-7)*log(d/r')
+C=(2*pi*8.85*10^(-12))/log(d/r)
+fprintf ('\n Value of Inductance(L)= %f H per m \n',L);
+fprintf ('\n Value of Capacitance(C)= %f F per m \n',C);
